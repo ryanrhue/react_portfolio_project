@@ -1,0 +1,12 @@
+.cardContainer {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .cardContainer:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardTitle {
+    text-align: center;
+  }

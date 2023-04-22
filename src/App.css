@@ -1,38 +1,88 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(170, 170, 170);
+}
+
+.homePageContent {
+  flex: 1;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+#macroCalculatorCard {
+  ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  max-width: 20rem;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  background-color: #D96C0D;
+  margin-bottom: 2rem;
+}
+
+.site-footer {
+  background-color: #D96C0D;
+  padding: 0px;
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%) opacity(0.5) blur(5px);
+}
+
+.jumbotron {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.3rem;
+  opacity: .9;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+}
+
+.jumbotron p {
+  font-size: 1.5rem;
+}
+
+.border-top {
+  border-color: black !important;
+}
+
+.icon-link {
+  color: black;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  color: blue;
+  text-decoration: none;
 }
